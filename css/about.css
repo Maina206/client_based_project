@@ -1,0 +1,160 @@
+p {
+    line-height: 1.8;
+}
+
+/* Hero Section */
+.about-hero {
+    background-color: #FFD54F;
+    text-align: center;
+    color: white;
+    padding: 6rem 0;
+    border-radius: 15px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* About Intro Section */
+.about-intro {
+    padding: 80px 0;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    color: #5B9BD5;
+    margin-bottom: 20px;
+}
+
+/* Corporate Culture Section */
+.corporate-culture {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+}
+
+.corporate-culture h2 {
+    text-align: center;
+    color: #5B9BD5;
+    margin-bottom: 40px;
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.culture-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.culture-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.culture-card h3 {
+    color: #5B9BD5;
+    margin-bottom: 15px;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    padding: 80px 0;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.mission-card, .vision-card {
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover, .vision-card:hover {
+    transform: translateY(-5px);
+}
+
+.mission-card {
+    background-color: #FFD233;
+    color: #333;
+}
+
+.vision-card {
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+    }
+
+    .culture-grid, .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero {
+        padding: 60px 0;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+}

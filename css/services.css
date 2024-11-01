@@ -1,0 +1,239 @@
+/* services.css */
+:root {
+    --primary-color: #FFD54F;
+    --secondary-color: #5B9BD5;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --white: #ffffff;
+    --section-padding: 4rem 0;
+    --border-radius: 8px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #5B9BD5;
+}
+
+.services-page {
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #FFD54F;
+    color: var(--white);
+    padding: 6rem 0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Primary Service Section */
+.primary-service {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: var(--section-padding);
+    /* background-color: var(--white); */
+
+}
+
+.primary-service h2 {
+    margin-bottom: 2rem;
+    color: #5B9BD5;
+}
+
+.service-intro {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.service-details, .debt-categories {
+    margin-bottom: 2rem;
+}
+
+.service-details h3, .debt-categories h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.service-details ul, .debt-categories ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-details li, .debt-categories li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+/* Major Services Section */
+.major-services {
+    padding: var(--section-padding);
+    background-color: #f8f9fa;
+}
+
+/* Supporting Services Section */
+.supporting-services {
+    padding: var(--section-padding);
+    background-color: var(--white);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Service Cards */
+.service-card.expanded {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card.expanded:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.service-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.service-content {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.service-content ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.service-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: var(--primary-color);
+    padding: var(--section-padding);
+}
+
+.why-choose-us h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: black;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #5B9BD5;
+    font-size: 2.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero-section {
+        padding: 4rem 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        color: #5B9BD5;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .service-card.expanded {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
