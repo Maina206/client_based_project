@@ -383,6 +383,10 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .service-grid {
+        margin: 5px;
+        padding: 2.5px;
+    }
     .cta-button {
         display: none;
       }
@@ -488,6 +492,10 @@ h2 {
 
 
 @media (max-width: 1200px) {
+    .service-grid {
+        margin: 5px;
+        padding: 0px;
+    }
     .company-logos {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -507,6 +515,11 @@ h2 {
 }
 
 @media (max-width: 576px) {
+    .service-grid {
+        margin: 5px;
+        padding: 0px;
+    }
+
     .company-logos {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -553,7 +566,11 @@ h2 {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 300px) {
+    .service-grid {
+        margin: 5px;
+        padding: 2.5px;
+    }
     .company-logos {
         grid-template-columns: repeat(1, 1fr);
     }
